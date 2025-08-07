@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Flexible Tab Rotator",
+  "version": "1.0",
+  "permissions": ["tabs", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Flexible Tab Rotator"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}

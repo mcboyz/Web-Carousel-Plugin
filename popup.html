@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      width: 360px;
+      padding: 12px;
+      background: #f8f9fa;
+    }
+
+    input[type="number"] {
+      width: 70px;
+      padding: 3px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="text"] {
+      padding: 6px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tab-entry {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .tab-title {
+      flex: 1;
+      margin: 0 10px;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .control {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="search" placeholder="🔍 搜索标签..." style="width: 100%;" />
+  <div id="tabList"></div>
+  <div class="control">
+    <button id="start">▶️ 开始轮播</button>
+    <button id="stop">⏹ 停止轮播</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
